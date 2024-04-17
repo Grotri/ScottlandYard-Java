@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.TextFlow?>
+<VBox maxHeight="1020.0" maxWidth="1644.0" minHeight="1020.0" minWidth="1920.0" prefHeight="1020.0" prefWidth="1644.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scottlandyard.EventController">
+   <Pane prefHeight="40.0" prefWidth="200.0">
+      <children>
+         <MenuButton fx:id="modeChoose" layoutX="27.0" layoutY="4.0" mnemonicParsing="false" text="Game Mode">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#initAutoplay" text="Auto-play" />
+             <MenuItem mnemonicParsing="false" onAction="#initSelfplay" text="Self-play" />
+           </items>
+         </MenuButton>
+      </children>
+   </Pane>
+   <HBox prefHeight="995.0" prefWidth="1920.0">
+      <TextFlow fx:id="logArea" prefHeight="995.0" prefWidth="315.0" />
+      <Pane fx:id="mainPane" prefHeight="995.0" prefWidth="1333.0">
+         <children>
+            <ImageView fitHeight="995.0" fitWidth="1331.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@pics/map_veiled.png" />
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="152.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point1.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="393.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point2.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="549.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point3.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="644.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point4.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1020.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point5.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1138.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point6.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1251.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point7.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="98.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point8.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="196.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point9.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="470.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point10.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="543.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point11.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="601.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point12.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="711.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point13.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="822.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point14.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="936.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point15.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1042.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point16.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1243.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point17.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="46.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point18.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="138.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point19.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="248.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point20.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="364.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point21.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="548.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point22.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="635.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point23.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="775.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point24.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="836.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point25.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="926.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point26.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="942.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point27.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="983.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point28.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1136.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point29.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1283.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point30.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="86.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point31.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="217.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point32.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="312.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point33.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="479.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point34.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="576.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point35.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="615.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point36.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="674.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point37.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="804.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point38.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="863.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point39.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="967.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point40.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1010.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point41.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1246.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point42.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="24.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point43.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="155.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point44.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="250.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point45.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="330.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point46.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="392.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point47.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="496.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point48.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="649.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point49.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="712.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point50.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="841.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point51.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="906.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point52.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="976.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point53.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1027.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point54.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1140.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point55.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1289.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point56.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="67.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point57.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="193.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point58.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="217.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point59.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="267.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point60.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="353.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point61.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="398.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point62.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="508.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point63.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="573.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point64.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="643.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point65.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="683.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point66.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="761.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point67.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="849.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point68.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="932.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point69.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1030.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point70.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1125.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point71.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1221.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point72.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="67.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point73.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="109.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point74.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="173.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point75.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="252.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point76.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="304.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point77.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="372.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point78.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="419.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point79.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="525.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point80.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="621.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point81.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="658.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point82.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="743.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point83.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="805.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point84.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="854.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point85.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="944.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point86.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1037.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point87.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1081.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point88.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1118.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point89.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1182.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point90.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1274.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point91.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="32.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point92.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="38.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point93.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="117.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point94.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="158.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point95.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="354.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point96.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="388.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point97.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="443.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point98.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="499.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point99.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="587.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point100.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="677.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point101.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="794.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point102.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="868.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point103.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="945.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point104.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1154.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point105.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1235.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point106.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1294.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point107.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1134.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point108.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="410.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point109.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="473.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point110.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="514.0" layoutY="508.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point111.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="537.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point112.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="626.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point113.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="689.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point114.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="792.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point115.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="946.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point116.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1052.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point117.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="947.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point118.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1266.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point119.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="30.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point120.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="76.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point121.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="140.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point122.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="303.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point123.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="396.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point124.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="566.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point125.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="733.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point126.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="855.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point127.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1008.0" layoutY="717.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point128.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1044.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point129.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="538.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point130.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="589.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point131.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="692.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point132.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="806.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point133.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="890.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point134.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1083.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point135.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1235.0" layoutY="668.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point136.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="246.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point137.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="425.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point138.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="531.0" layoutY="638.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point139.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="690.0" layoutY="624.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point140.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="838.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point141.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="946.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point142.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1043.0" layoutY="645.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point143.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="46.0" layoutY="732.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point144.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="92.0" layoutY="728.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point145.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="154.0" layoutY="723.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point146.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="200.0" layoutY="712.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point147.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="266.0" layoutY="702.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point148.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="322.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point149.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="385.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point150.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="415.0" layoutY="704.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point151.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="459.0" layoutY="672.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point152.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="484.0" layoutY="709.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point153.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="594.0" layoutY="684.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point154.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="632.0" layoutY="732.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point155.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="705.0" layoutY="733.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point156.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="769.0" layoutY="738.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point157.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="873.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point158.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="877.0" layoutY="839.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point159.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1089.0" layoutY="733.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point160.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1174.0" layoutY="723.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point161.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1296.0" layoutY="726.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point162.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="148.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point163.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="214.0" layoutY="758.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point164.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="337.0" layoutY="778.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point165.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="467.0" layoutY="749.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point166.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="568.0" layoutY="768.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point167.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="605.0" layoutY="795.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point168.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="703.0" layoutY="784.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point169.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="760.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point170.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1149.0" layoutY="930.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point171.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="975.0" layoutY="786.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point172.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1110.0" layoutY="827.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point173.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1223.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point174.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1282.0" layoutY="841.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point175.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="26.0" layoutY="822.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point176.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="79.0" layoutY="810.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point177.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="176.0" layoutY="802.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point178.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="290.0" layoutY="813.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point179.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="360.0" layoutY="829.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point180.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="435.0" layoutY="808.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point181.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="470.0" layoutY="818.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point182.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="537.0" layoutY="789.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point183.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="665.0" layoutY="839.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point184.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="739.0" layoutY="892.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point185.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="820.0" layoutY="875.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point186.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="941.0" layoutY="846.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point187.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1061.0" layoutY="849.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point188.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="81.0" layoutY="898.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point189.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="139.0" layoutY="932.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point190.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="215.0" layoutY="871.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point191.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="233.0" layoutY="949.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point192.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="411.0" layoutY="877.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point193.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="433.0" layoutY="904.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point194.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="488.0" layoutY="899.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point195.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="566.0" layoutY="858.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point196.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="577.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point197.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="875.0" layoutY="958.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point198.png" />
+            </ImageView>
+            <ImageView disable="true" fitHeight="23.0" fitWidth="30.0" layoutX="1074.0" layoutY="950.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <Image url="@pics/point199.png" />
+            </ImageView>
+            <ImageView fx:id="mrX" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pics/mrx.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doc1" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pics/doc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doc2" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pics/doc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doc3" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pics/doc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doc4" fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pics/doc.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="995.0" prefWidth="272.0">
+         <children>
+            <Label fx:id="taxiText" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="39.0" prefHeight="27.0" prefWidth="185.0" text="0x Taxi tickets" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="busText" layoutX="79.0" layoutY="147.0" prefHeight="17.0" prefWidth="115.0" text="0x Bus tickets" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="metroText" layoutX="69.0" layoutY="268.0" prefHeight="27.0" prefWidth="136.0" text="0x Metro tickets" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="blackText" layoutX="69.0" layoutY="386.0" prefHeight="27.0" prefWidth="136.0" text="0x Black tickets" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="taxiButton" layoutX="106.0" layoutY="76.0" mnemonicParsing="false" onAction="#taxiPressed" text="Use Taxi" visible="false" />
+            <ToggleButton fx:id="busButton" layoutX="108.0" layoutY="191.0" mnemonicParsing="false" onAction="#busPressed" text="Use Bus" visible="false" />
+            <ToggleButton fx:id="metroButton" layoutX="100.0" layoutY="306.0" mnemonicParsing="false" onAction="#metroPressed" text="Use Metro" visible="false" />
+            <ToggleButton fx:id="blackButton" layoutX="101.0" layoutY="433.0" mnemonicParsing="false" onAction="#blackPressed" text="Use Black" visible="false" />
+         </children></Pane>
+   </HBox>
+</VBox>
